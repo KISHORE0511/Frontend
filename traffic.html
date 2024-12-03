@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic</title>
+    <link rel="stylesheet" href="./trafficsty.css">
+</head>
+<body>
+        <div class="fullbox">
+            <div class="tbox">
+                <div class="red" id="red"></div>
+                <div class="yellow" id="yellow"></div>
+                <div class="green" id="green"></div>
+            </div>
+        </div>
+        <script>
+            function stop(){
+                document.getElementById("red").style.backgroundColor="red";
+                document.getElementById("yellow").style.backgroundColor="white";
+                document.getElementById("green").style.backgroundColor="white";
+                setTimeout(wait, 3000);
+            }
+            function wait(){
+                document.getElementById("red").style.backgroundColor="white";
+                document.getElementById("yellow").style.backgroundColor="yellow";
+                document.getElementById("green").style.backgroundColor="white";
+                setTimeout(go, 3000);
+            }
+            function go(){
+                document.getElementById("red").style.backgroundColor="white";
+                document.getElementById("yellow").style.backgroundColor="white";
+                document.getElementById("green").style.backgroundColor="green";
+                setTimeout(stop, 3000);
+            }
+            stop();
+        </script>
+</body>
+</html>
