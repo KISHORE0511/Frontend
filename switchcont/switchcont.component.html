@@ -1,0 +1,22 @@
+<p>switchcont works!</p>
+
+
+<button type="button" (click)="switch('bike')">Bike</button>
+<button type="button" (click)="switch('car')">Car</button>
+
+<ul>
+    <li *ngFor="let course of values" ><div (click)="switch2(course)">{{course}}</div></li>
+</ul>
+
+<div>
+    You have selected {{motor}}
+</div>
+
+
+<hr>
+
+<h1>Task 4</h1>
+
+<h3>Square of number 8</h3>
+
+<!-- <div>{{8 | square}}</div> -->
